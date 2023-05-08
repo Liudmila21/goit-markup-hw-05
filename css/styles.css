@@ -139,17 +139,16 @@ img {
   left: 0px;
 
   bottom: -1px;
-  /*background-color: #404bbf; */
-
+  background-color: #404bbf;
   border-radius: 2px;
 
   transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-element.current::after {
+/* .nav-element.current::after {
   background-color: #404bbf;
-}
+} */
 
 /* .nav-element.current::after, */
 .nav-element:focus::after,
