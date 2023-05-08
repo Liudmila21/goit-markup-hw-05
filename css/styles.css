@@ -118,7 +118,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 
-  color: var(--secondary-text-color);
+  color: #404bbf;
   font-weight: 500;
 
   transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,7 +138,7 @@ img {
   height: 4px;
   left: 0px;
 
-  bottom: 4px;
+  bottom: -1px;
 
   border-radius: 2px;
 
@@ -381,7 +381,8 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-customer:hover,
@@ -481,9 +482,10 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 
-  transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1),
-    background-color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -579,8 +581,8 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   backdrop-filter: blur(5px);
 
-  transition: opacity 250ms ease, visibility 250ms ease,
-    backdrop-filter 250ms ease;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -597,7 +599,7 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(0) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   overflow: auto;
 
@@ -610,7 +612,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 700ms ease-in 200ms, opacity 700ms ease-in 200ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -619,11 +621,16 @@ img {
 }
 
 .bnt-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
+  /* padding: 0; */
   margin-left: auto;
 
   color: #2e2f42;
@@ -632,8 +639,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1),
-    background-color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
@@ -641,10 +648,17 @@ img {
 .bnt-modal-close:focus {
   color: #e7e9fc;
   background-color: #404bbf;
+  border: none;
 }
 .close-icon {
   display: block;
   width: 100%;
   height: 100%;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: #ffffff;
 }
