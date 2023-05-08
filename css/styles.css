@@ -122,6 +122,9 @@ img {
 
   transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
 }
+.current {
+  color: #404bbf;
+}
 
 .nav-element:hover,
 .nav-element:focus,
