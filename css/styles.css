@@ -117,8 +117,7 @@ img {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
-  color: #404bbf;
+  color: var(--secondary-text-color);
   font-weight: 500;
 
   transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,10 +136,11 @@ img {
   width: 100%;
   height: 4px;
   left: 0px;
-
   bottom: -1px;
+
   background-color: #404bbf;
   border-radius: 2px;
+  opacity: 0;
 
   transition: color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--anime-fast) cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,9 +150,10 @@ img {
   background-color: #404bbf;
 } */
 
-/* .nav-element.current::after, */
+.nav-element.current::after,
 .nav-element:focus::after,
 .nav-element:hover::after {
+  opacity: 1;
   background-color: var(--accent-active);
 }
 
