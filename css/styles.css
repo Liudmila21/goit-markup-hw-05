@@ -571,6 +571,11 @@ img {
   transform: translateY(0);
   opacity: 1;
 }
+
+.work-item:focus .overlay-label {
+  transform: translateY(0);
+  opacity: 1;
+}
 .work-description {
   padding: 32px 16px 32px;
   border-right: 1px solid #e7e9fc;
@@ -652,7 +657,6 @@ img {
   margin-left: auto;
 
   color: #2e2f42;
-
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
