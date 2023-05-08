@@ -652,8 +652,8 @@ img {
 }
 .bnt-modal-close:hover,
 .bnt-modal-close:focus {
-  color: #e7e9fc;
   background-color: #404bbf;
+  color: #ffffff;
   border: none;
 }
 .close-icon {
@@ -664,7 +664,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.bnt-modal-close:hover .child,
+/* .bnt-modal-close:hover .child,
 .bnt-modal-close:focus .child {
   fill: #ffffff;
-}
+} */
