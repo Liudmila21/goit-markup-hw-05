@@ -125,6 +125,9 @@ img {
 .current {
   color: #404bbf;
 }
+.autoper {
+  color: #404bbf;
+}
 
 .nav-element:hover,
 .nav-element:focus,
