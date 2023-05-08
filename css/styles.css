@@ -559,7 +559,7 @@ img {
   padding-bottom: 40px;
 
   color: var(--color-cloud);
-  background-color: var(--accent-active);
+  background-color: #4d5ae5;
 
   transform: translateY(100%);
   opacity: 0;
@@ -572,7 +572,7 @@ img {
   opacity: 1;
 }
 
-.work-item:focus .overlay-label {
+.work-foto-link:focus .overlay-label {
   transform: translateY(0);
   opacity: 1;
 }
