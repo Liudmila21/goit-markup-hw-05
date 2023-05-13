@@ -471,11 +471,20 @@ img {
 .footer-social-link:hover {
   background-color: #31d0aa;
 }
+
 /* -------------------form-footer--------------- */
 .form-footer {
   /* margin-right: 0; */
 }
 
+.footer-media {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 .footer-subscribe {
   display: flex;
   justify-content: center;
