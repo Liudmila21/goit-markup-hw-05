@@ -471,7 +471,6 @@ img {
 .footer-social-link:hover {
   background-color: #31d0aa;
 }
-
 /* -------------------form-footer--------------- */
 .form-footer {
   /* margin-right: 0; */
@@ -485,6 +484,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 .footer-subscribe {
   display: flex;
   justify-content: center;
